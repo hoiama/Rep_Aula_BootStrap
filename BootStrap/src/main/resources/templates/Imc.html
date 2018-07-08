@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML, CSS and JavaScript demo</title>
+	<link rel="stylesheet" href="/framework/bootstrap/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="/css/imc.css"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+</head>
+<body>
+	<div class="container">
+		<img src="/imagens/saude.png" class="img-responsive"/>
+		
+			<div class="jumbotron">
+				<h2 class="center">Sistema de IMC </h2>
+			</div>
+			
+			<div class="panel panel-default">
+			
+			<div class="panel-heading">
+				<div class="container">
+					<div class="col-md-3">
+						<button class="btn btn-primary" data-toggle="collapse" 
+						data-target="#formularioPaciente">Cadastrar</button>
+					</div>
+					<div>
+						<input type="text" name="campoFiltro" class="campoFiltro col-md-5" 
+						placeholder="Pesquisa" id="campoFiltro"/>
+					</div>
+				</div>
+			</div>
+				
+			<div class="table-responsive" >
+				<div id= "formularioPaciente" class="panel-body collapse" >
+					<form id="formulario" action="/salvar" method="GET">
+					
+						<div class="form-group col-md-6">
+							<label id="label-nome"> Nome: </label>
+							<input name="nome" type="text" class="form-control form-control-sm" />		
+						</div>
+						
+						<div class="form-group col-md-6">
+							<label id="label-email">Email: </label>
+							<input name="email" type="text" class="form-control form-control-sm"/>
+						</div>
+						
+						<div class="form-group col-md-4">
+							<label id="label-peso">Peso (kg)</label>
+							<input name="peso" type="number" class="form-control form-control-sm col-md-6" />
+						</div>
+						
+						<div class="form-group col-md-4">
+							<label id="label-altura">Altura (m)</label>
+							<input name="altura" type="number" class="form-control form-control-sm"/>
+						</div>
+						
+						<div class="form-group col-md-4">	
+							<label>Gordura (%)</label>
+							<input type="text" name="gordura" class="form-control form-control-sm"/>
+						</div>
+						
+						<div class="form-group col-md-4">
+							<input type="submit" value="Salvar" id="botaoSalvar" class="btn btn-primary"/>
+							<div ><ul id="mensagem-erro" class=""></ul></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<th></th>
+		<div class="table-responsive" >
+			<table class="table table table-hover">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Email</th>
+						<th>Peso</th>
+						<th>Altura</th>
+						<th>Gordura</th>
+						<th>IMC</th>
+						<th>Deletar</th>
+					</tr>
+				</thead>
+				<tbody class="table-body"></tbody>
+			</table>
+			<div id="grupo-legenda" class="panel-group" >
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title " data-toggle="collapse" data-target="#imcVerde" 
+						data-parent="#grupo-legenda">IMC verde</h4>
+					</div>
+					<div id="imcVerde" class="collapse">
+						<div class="panel-body">
+							<p > Paciente com peso ideal em relação asua altura e em relação a sua 
+							massa e gordura corporal </p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title" data-toggle="collapse" data-target="#imcAmarelo"
+						data-parent="#grupo-legenda">IMC Amarelo</h4>
+					</div>
+					<div id="imcAmarelo" class="collapse">
+						<div class="panel-body">
+							<p> Paciente com peso ideal em relação asua altura e em relação a sua 
+							massa e gordura corporal </p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title" data-toggle="collapse" data-target="#imcVermelho"
+						data-parent="#grupo-legenda">IMC Vermelho</h4>
+					</div>
+					<div id="imcVermelho" class="collapse">
+						<div class="panel-body">
+							<p> Paciente com peso ideal em relação asua altura e em relação a sua 
+							massa e gordura corporal </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/framework/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="/framework/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/javascript/inserirPaiFilho.js"></script>
+	<script src="/javascript/filtro.js" type="text/javascript"></script>
+	<script src="/javascript/deletarLinhasTabela.js" type="text/javascript"></script>
+	<script src="/javascript/gerarIMC.js" type="text/javascript"></script>
+	<script src="/javascript/validadorDadosTabela.js" type="text/javascript"></script>
+	<script src="/javascript/geradorElementos.js" type="text/javascript"></script>
+	<script src="/javascript/xhrPacientes.js" type="text/javascript"></script>
+	<script src="/javascript/principal.js" type="text/javascript"></script>
+</body>
+</html>

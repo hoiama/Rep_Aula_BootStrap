@@ -1,0 +1,8 @@
+br/com/hoiama/curriculos/main/Service.class
+br/com/hoiama/model/entity/Curriculo.class
+br/com/hoiama/curriculos/testes/TesteCurriculos.class
+br/com/hoiama/curriculos/main/ControllerDashboard.class
+br/com/hoiama/curriculos/testes/TesteGeracaoConteudo.class
+br/com/hoiama/curriculos/main/CursoRepository.class
+br/com/hoiama/curriculos/main/StartSpring.class
+br/com/hoiama/curriculos/main/Curso.class
