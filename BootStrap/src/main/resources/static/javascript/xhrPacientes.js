@@ -13,6 +13,7 @@ function getPacientes() {
 				var trPaciente = gerarElementoTr(paciente);
 				inserirPaiFilho(tabela, trPaciente);
 			})
+
 		} else {
 			var array = [ xhr.status ];
 			inserirLiErro(array);

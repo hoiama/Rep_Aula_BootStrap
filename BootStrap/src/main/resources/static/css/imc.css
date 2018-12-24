@@ -38,9 +38,6 @@
 	background-color: #fcaf3e;
 }
 
-/* .table{ */
-/* 	width: 700px;	 */
-/* } */
 .apagarDevagar {
 	opacity: 0;
 	transition: 0.8s;
@@ -51,9 +48,6 @@
 	transition: 0.8s;
 }
 
-/* #formulario{ */
-/* 	width: 700px; */
-/* } */
 .filtro {
 	width: 200px;
 	margin-bottom: 10px;

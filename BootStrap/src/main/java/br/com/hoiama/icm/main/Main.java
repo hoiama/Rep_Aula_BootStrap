@@ -12,9 +12,7 @@ import br.com.hoiama.icm.regras.Controladora;
 @EntityScan(basePackageClasses= {Paciente.class})
 @SpringBootApplication
 public class Main {
-	
 	public static void main(String[] args) {
 		SpringApplication.run(Main.class, args);
 	}
- 
 }

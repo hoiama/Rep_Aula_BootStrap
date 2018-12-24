@@ -3,8 +3,8 @@ function geradorElementos(event) {
 	var formulario = document.querySelector("#formulario");
 	var paciente = coletarDadosFormulario(formulario);
 	var trPaciente = gerarElementoTr(paciente);
-	
 	var listaErros = validadorPesoAltura(paciente, formulario);
+
 	if(listaErros.length ==  0 ){
 		var tabela = document.querySelector(".table-body");
 		inserirPaiFilho(tabela, trPaciente);
