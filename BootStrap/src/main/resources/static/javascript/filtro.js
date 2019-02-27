@@ -7,7 +7,6 @@ function filtroNomes (){
 
 		if(expressao.test(pacienteNome)){
 			listaTrPacientes[i].classList.remove("invisivel");
-
 		}else{
 			listaTrPacientes[i].classList.add("invisivel");
 		}

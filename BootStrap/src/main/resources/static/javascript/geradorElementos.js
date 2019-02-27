@@ -16,7 +16,6 @@ function geradorElementos(event) {
 	}
 }
 
-
 function coletarDadosFormulario(form) {
 	var paciente = {
 		nome : form.nome.value,
@@ -29,7 +28,6 @@ function coletarDadosFormulario(form) {
 	console.log("coletando dados formulario");
 	return paciente;
 }
-
 
 function gerarElementoTr(paciente) {
 	var trPaciente = criadorElementos("tr", "paciente");
@@ -45,14 +43,12 @@ function gerarElementoTr(paciente) {
 	return trPaciente;
 }
 
-
 function criadorElementos(elemento, classe, conteudo) {
 	var Elemento = document.createElement(elemento);
 	Elemento.classList.add(classe);
 	Elemento.textContent = conteudo;
 	return Elemento;
 }
-
 
 function inserirPaiFilho(pai, filho) {
 	pai.appendChild(filho);
